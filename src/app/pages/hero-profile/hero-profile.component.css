@@ -1,0 +1,17 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+  font-family: arial;
+  max-width: 660px;
+  margin: auto;
+}
+
+img {
+    max-width: 150px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}

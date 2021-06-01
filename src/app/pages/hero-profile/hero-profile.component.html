@@ -1,0 +1,13 @@
+<div class="card" *ngIf="hero">
+    <img src="../../../assets/images/user-profile.png"
+        alt="as"
+        style="width:100%">
+    <h1>Hero Name: <span>{{ hero.name }}</span></h1>
+    <p class="title">
+        {{ hero.description }}
+    </p>
+    <div style="margin: 24px 0;">
+        Powers:
+         <span>{{ hero.powers}}</span>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="top-header">
+        <app-filter-bar (sortEmmiter)="onSort($event)"
+            (searchEmitter)="onSearch($event)"></app-filter-bar>
+    </div>
+    <div class="content">
+        <app-table [tableHeaders]="tableHeaders"
+            [tableContent]="filteredHeros"
+            (viewProfileEmitter)="onViewProfile($event)"></app-table>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div>
+    <table id="table">
+        <tr>
+            <th scope="col" *ngFor="let head of tableHeaders">{{ head.value }}</th>
+        </tr>
+        <tr *ngFor="let content of tableContent">
+            <td>{{ content.name }}</td>
+            <td>{{ content.powers }}</td>
+            <td>{{ content.rate }}</td>
+            <td>
+                <button class="btn" (click)="viewProfileEmitter.emit(content)" style="cursor: pointer;">View Profile</button>
+            </td>
+        </tr>
+    </table>
+</div>
